@@ -1,3 +1,12 @@
+server:
+  port: 8085
 spring:
   application:
-    name:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chandrakanthrck/microservices-config/
+          clone-on-start: true
+
