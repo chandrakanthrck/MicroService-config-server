@@ -1,5 +1,6 @@
 server:
   port: 8085
+
 spring:
   application:
     name: CONFIG-SERVER
@@ -7,6 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/chandrakanthrck/microservices-config/
+          uri: https://github.com/chandrakanthrck/microservices-config.git
+          default-label: main
           clone-on-start: true
-
