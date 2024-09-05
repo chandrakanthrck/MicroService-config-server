@@ -27,7 +27,7 @@ This project is a **Spring Cloud Config Server** that serves as a centralized co
 ```bash
 git clone https://github.com/your-username/microservice-config-server.git
 cd microservice-config-server
-
+```
 ## Configure the Application
 
 ### Remote Git Configuration Source:
@@ -41,7 +41,7 @@ spring:
         git:
           uri: https://github.com/your-username/microservice-config-repo
           default-label: main
-
+```
 ## Example Config Fetch URL
 
 Microservices can fetch configurations for a specific profile and label using the following URL pattern:
