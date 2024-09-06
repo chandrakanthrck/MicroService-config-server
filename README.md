@@ -22,7 +22,6 @@ This project is a **Spring Cloud Config Server** that serves as a centralized co
 - Java 17 or higher
 - Maven 3.6+
 - A remote Git repository (or local) to store configuration files
-
 ### Clone the Repository
 ```bash
 git clone git@github.com:chandrakanthrck/MicroService-config-server.git
