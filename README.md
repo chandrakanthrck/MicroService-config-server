@@ -25,7 +25,7 @@ This project is a **Spring Cloud Config Server** that serves as a centralized co
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/chandrakanthrck/microservice-config.git
+git clone git@github.com:chandrakanthrck/MicroService-config-server.git
 cd microservice-config-server
 ```
 ## Configure the Application
@@ -39,7 +39,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/your-username/microservice-config-repo
+          uri: git@github.com:chandrakanthrck/MicroService-config-server.git
           default-label: main
 ```
 ## Example Config Fetch URL
