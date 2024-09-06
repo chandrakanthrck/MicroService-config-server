@@ -67,3 +67,21 @@ http://localhost:8888/{application}/{profile}/{label}
 
 ```bash
 http://localhost:8888/hotelservice/dev/main
+```
+- **{application}**: The name of the microservice (e.g., `hotelservice`).
+- **{profile}**: The active profile (e.g., `dev`, `prod`).
+- **{label}**: The Git branch or tag (default is `main`).
+
+### Dynamic Refresh of Configuration
+Use Spring Cloud’s `@RefreshScope` in your microservices to enable dynamic refresh of properties without restarting the services.
+```bash
+POST /actuator/refresh
+```
+This allows the microservices to reload properties dynamically without needing to restart.
+
+### Important Notes
+- Ensure sensitive data like passwords, API keys, etc., are not exposed in these configuration files. Consider using **encrypted values** or **environment variables** for sensitive information.
+- This repository works in conjunction with the **Spring Cloud Config Server** to provide environment-specific configurations to microservices.
+
+### License
+This project is licensed under the MIT License.
