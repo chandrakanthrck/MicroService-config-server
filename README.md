@@ -25,7 +25,7 @@ This project is a **Spring Cloud Config Server** that serves as a centralized co
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/microservice-config-server.git
+git clone https://github.com/chandrakanthrck/microservice-config.git
 cd microservice-config-server
 ```
 ## Configure the Application
