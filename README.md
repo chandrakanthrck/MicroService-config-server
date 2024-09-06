@@ -85,3 +85,10 @@ This allows the microservices to reload properties dynamically without needing t
 
 ### License
 This project is licensed under the MIT License.
+
+### Changes made:
+1. **Added usage of the `config-repo` repository**: Mentioned how the repository is linked and how it stores environment-specific files.
+2. **Link to the config repo**: Provided a link to the **configuration repository** for reference.
+3. **How it works**: Explained how the Config Server fetches the files and how microservices consume them.
+
+This should now provide a clear explanation of how the **config-env repo** is used in this setup. Let me know if this fits or if you need more details!
