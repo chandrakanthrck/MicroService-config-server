@@ -42,6 +42,19 @@ spring:
           uri: git@github.com:chandrakanthrck/MicroService-config-server.git
           default-label: main
 ```
+### Usage of Configuration Repository
+The configuration files for different environments (e.g., `application-dev.yml`, `application-prod.yml`) are stored in a separate repository, which is specified in the **Config Server's** configuration.
+
+- **Configuration Repository**: [Config Repo](https://github.com/chandrakanthrck/env-config)
+- This repository holds environment-specific configuration files for all microservices, such as:
+  - `application.yml` (default config)
+  - `application-dev.yml` (development environment)
+  - `application-prod.yml` (production environment)
+
+### How It Works
+- When the **Config Server** starts, it fetches the configuration files from the linked repository.
+- Microservices retrieve their environment-specific configurations dynamically from the **Config Server** based on the active profile.
+
 ## Example Config Fetch URL
 
 Microservices can fetch configurations for a specific profile and label using the following URL pattern:
